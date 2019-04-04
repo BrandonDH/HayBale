@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row spacer-top spacer-bottom">
+      <div class="six columns">
+        <h1><strong>Mail Bale</strong></h1>
+        <h2>Copying email lists for alert groups manually is painfull. Having to format that list by hand is even worse.</h2>
+      </div>
+      <div class="six columns large-spacer-top">
+        <p>I made this script to take a list of email and format it with brackets and commas so that it is ready to be consumed by PgAdmin into a database.</p>
+        <div>
+          <a class="button button-primary" href="https://github.com/BrandonDH/mail-bale">Fork Mail Bale</a>
+        </div>
+      </div>
+    </div>
+    <div class="row"><h2><strong>These are the files</strong></h2></div>
+    <div class="row">
+      <div class="eight columns">
+        <h4>process_email_groups.py</h4>
+        <div>
+          <pre>
+            <code>
+  # This is the file that we will read.
+  raw_email_data = 'raw_email_data.txt'
+
+  # Open the file here and perform any operations necessary.
+  with open(raw_email_data, 'r') as data_file:
+
+    read_data = data_file.read().splitlines()
+    processed_data = ', '.join(read_data)
+
+  print('{' + processed_data + '}')
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="four columns">
+        <h4>raw_email_data.text</h4>
+        <p>This is the file where the updated list will be dumped.</p>
+      </div>
+    </div>
+    <footer><div class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a></div></footer>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
