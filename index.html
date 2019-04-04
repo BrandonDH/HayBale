@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>MAIL BALE</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -15,8 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -34,8 +33,9 @@
   <div class="container">
     <div class="row spacer-top spacer-bottom">
       <div class="six columns">
+        <h6><strong>A Python Script</strong></h6>
         <h1><strong>Mail Bale</strong></h1>
-        <h2>Copying email lists for alert groups manually is painfull. Having to format that list by hand is even worse.</h2>
+        <h2>Copying email lists for alert groups manually is painful. Having to format that list by hand is even worse.</h2>
       </div>
       <div class="six columns large-spacer-top">
         <p>I made this script to take a list of email and format it with brackets and commas so that it is ready to be consumed by PgAdmin into a database.</p>
@@ -44,33 +44,30 @@
         </div>
       </div>
     </div>
-    <div class="row"><h2><strong>These are the files</strong></h2></div>
+    <div class="row"><h6><strong>These are the files</strong></h6></div>
     <div class="row">
       <div class="eight columns">
-        <h4>process_email_groups.py</h4>
+        <h4><strong>process_email_groups.py</strong></h4>
         <div>
-          <pre>
-            <code>
-  # This is the file that we will read.
+          <pre><code># This is the file that we will read.
   raw_email_data = 'raw_email_data.txt'
 
   # Open the file here and perform any operations necessary.
   with open(raw_email_data, 'r') as data_file:
-
     read_data = data_file.read().splitlines()
     processed_data = ', '.join(read_data)
 
-  print('{' + processed_data + '}')
-            </code>
-          </pre>
+  print('{' + processed_data + '}')</code></pre>
         </div>
       </div>
       <div class="four columns">
-        <h4>raw_email_data.text</h4>
-        <p>This is the file where the updated list will be dumped.</p>
+        <h4><strong>raw_email_data.text</strong></h4>
+        <p>Paste your email list in the file. When the script runs it will read from here, and output in the command line.</p>
+        <p>Soon this will output in the same file.</p>
       </div>
     </div>
-    <footer><div class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a></div></footer>
+    <footer><div class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a>
+     | <a href="https://github.com/BrandonDH">Visit my GitHub account</a></div></footer>
   </div>
 
 <!-- End Document
