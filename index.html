@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
 
@@ -32,13 +33,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row spacer-top spacer-bottom">
-      <div class="six columns">
-        <h6><strong>A Python Script</strong></h6>
+      <div class="eight columns">
+        <h6 class="secondary-text"><strong>A Python Script</strong></h6>
         <h1><strong>Mail Bale</strong></h1>
-        <h2>Copying email lists for alert groups manually is painful. Having to format that list by hand is even worse.</h2>
+        <h2>Format bulk email lists for pgAdmin and PostgreSQL.</h2>
       </div>
-      <div class="six columns large-spacer-top">
-        <p>I made this script to take a list of email and format it with brackets and commas so that it is ready to be consumed by PgAdmin into a database.</p>
+  
+      <div class="four columns spacer-top">
+        <p>I made this script to take a list of email addresses and format them so they're ready to be consumed by PgAdmin.</p>
         <div>
           <a class="button button-primary" href="https://github.com/BrandonDH/mail-bale">Fork Mail Bale</a>
         </div>
@@ -46,7 +48,7 @@
     </div>
     <div class="row spacer-bottom">
       <div class="six columns">
-        <h6>input a list like this:</h6>
+        <h5 class="secondary-text">Input a list like this:</h5>
         <pre>
           <code>
   user1@user1.com
@@ -55,39 +57,19 @@
           </code></pre>
       </div>
         <div class="six columns">
-        <h6>and get output like this:</h6>
+        <h5 class="secondary-text">Output a list like this:</h5>
         <pre>
           <code>
   {user1@user1.com, user2@user2.com, user3@user3.com}
           </code>
         </pre>
       </div>
-
-
     </div>
-    <div class="row"><h6><strong>These are the files</strong></h6></div>
-    <div class="row">
-      <div class="eight columns">
-        <h4><strong>process_email_groups.py</strong></h4>
-        <div>
-          <pre><code># This is the file that we will read.
-  raw_email_data = 'raw_email_data.txt'
-
-  # Open the file here and perform any operations necessary.
-  with open(raw_email_data, 'r') as data_file:
-    read_data = data_file.read().splitlines()
-    processed_data = ', '.join(read_data)
-
-  print('{' + processed_data + '}')</code></pre>
-        </div>
-      </div>
-      <div class="four columns">
-        <h4><strong>raw_email_data.text</strong></h4>
-        <p>Paste your email list in the file. When the script runs it will read from here, and output in the command line.</p>
-        <p>Soon this will output in the same file.</p>
-      </div>
+    <div class="row spacer-bottom" style="text-align: center;">
+      <h4>I'd love the support!</h4>
+      <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/bherford"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
     </div>
-    <footer><div class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a>
+    <footer> <div style="text-align: center;" class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a>
      | <a href="https://github.com/BrandonDH">Visit my GitHub account</a></div></footer>
   </div>
 
