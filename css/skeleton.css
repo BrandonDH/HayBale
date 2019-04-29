@@ -486,3 +486,11 @@ there.
   opacity: 0.85 !important;
   color:#000000 !important;
 }
+
+.header-illo {
+  z-index: -10;
+  position: absolute;
+  top: 200px;
+  transform: rotate(30deg);
+  left: 200px;
+}
