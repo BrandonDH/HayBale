@@ -490,7 +490,7 @@ there.
 .header-illo {
   width: 300px;
   z-index: -10;
-  position: absolute;
+  position: fixed;
   top: 100px;
   transform: rotate(20deg);
   left: 50%;
