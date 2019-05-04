@@ -32,9 +32,21 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-      <img class="spacer-bottom spacer-top" src="bale_simple.png" width="50" alt="bale logo">
-
-    <div class="row spacer-top spacer-bottom">
+      <img class="spacer-top" src="bale_simple.png" width="30" alt="bale logo">
+      <h3>Mail Bale</h3>
+      <h5>Format bulk email lists for pgAdmin and PostgreSQL. I made this script to take a list of email addresses and format them so they're ready to be consumed by PgAdmin.</h5>
+      <div class="row">
+        <form>
+          <input type="text" placeholder="Enter a list of emails" class="inputSubmit" id="emailList" value="">
+          <input type="submit" value="Clear List">
+        </form>
+        <p>Formatted email list will output below.</p>
+        <div style="text-align: center;">
+          <div class="output-box" id="alert" style="font-size:2rem;"></div>
+        </div>
+        </div>
+      </div>
+    <!-- <div class="row spacer-top spacer-bottom">
       <div class="eight columns">
 
         <h6 class="secondary-text"><strong>A Python Script</strong></h6>
@@ -50,6 +62,7 @@
         </div>
       </div>
     </div>
+    
     <div class="row spacer-bottom">
       <div class="six columns">
         <h5 class="secondary-text">Input a list like this:</h5>
@@ -73,10 +86,12 @@
       <img src="wobb-lobb.png" alt="" width="100">
       <h4>I appreciate the support!</h4>
       <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/bherford"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
-    </div>
-    <footer> <div style="text-align: center;" class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a>
+    </div> -->
+    <footer> <div style="text-align: center; margin-top:5rem;" class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a>
      | <a href="https://github.com/BrandonDH">Visit my GitHub account</a></div></footer>
   </div>
+
+  <script src="process_email_groups.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
