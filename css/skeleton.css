@@ -515,6 +515,10 @@ there.
   box-sizing: border-box;
 }
 
+.purple {
+  color: #9966ff;
+}
+
 .inputSubmit {
   width: 100%;
 }
