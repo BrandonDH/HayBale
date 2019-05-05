@@ -1,99 +1,66 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mail Bale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/coffee-button.css">
+  </head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>MAIL BALE</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-      <img class="spacer-top" src="bale_simple.png" width="30" alt="bale logo">
-      <h3>Mail Bale</h3>
-      <h5 class="purple">Format bulk email lists for pgAdmin and PostgreSQL. I made this script to take a list of email addresses and format them so they're ready to be consumed by PgAdmin.</h5>
-      <div class="row">
-        <form>
-          <input type="text" placeholder="Enter a list of emails" class="inputSubmit" id="emailList" value="">
-          <input type="submit" value="Clear List">
-        </form>
-        <p>Formatted email list will output below.</p>
-        <div style="text-align: center;">
-          <div class="output-box" id="alert" style="font-size:2rem;"></div>
-        </div>
+  <body>
+    <div class="container">
+      
+      <div class="row mt-5">
+        <div class="d-flex col-md-8 offset-md-2">
+          <img src="bale_simple.png" height="40" alt="bale logo">
+          <a class="ml-auto bmc-button" target="_blank" href="https://www.buymeacoffee.com/bherford"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span>Buy me a coffee</span></a>
         </div>
       </div>
-    <!-- <div class="row spacer-top spacer-bottom">
-      <div class="eight columns">
 
-        <h6 class="secondary-text"><strong>A Python Script</strong></h6>
-        <h1><strong>Mail Bale</strong></h1>
-        <h2>Format bulk email lists for pgAdmin and PostgreSQL.</h2>
-        <img class="header-illo" src="lobb-wobb.png" alt="">
-      </div>
-  
-      <div class="four columns spacer-top">
-        <p>I made this script to take a list of email addresses and format them so they're ready to be consumed by PgAdmin.</p>
-        <div>
-          <a class="button button-primary" href="https://github.com/BrandonDH/mail-bale">Fork Mail Bale</a>
+      <div class="row mt-5">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="display-3">Mail Bale</h1>
+          <h5 class="purple">Format big lists.</h5>
         </div>
       </div>
+      <div class="row mt-5">
+        <div class="col-md-8 offset-md-2">
+          <form>
+            <h2 class="mb-5 purple">Unformatted List goes here.</h2>
+            <div class="form-group">
+              <label for="emailList">Format like this: {item, item, item}</label>
+              <input type="text" class="form-control" id="emailList" placeholder="Paste an unformatted list here...">
+              <small id="emailHelp" class="form-text text-muted">Your formatted list will appear below as you type or paste.</small>
+            </div>
+            
+            <input type="submit" class="btn btn-primary" value="Clear List">
+          </form>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-8 offset-md-2">
+            <h2 class="mb-5 purple">Formatted List goes here.</h2>
+            <div class="text-center output-box p-5 font-weight-bold" id="alert"></div>      
+        </div>
+      </div>
+      
+      <div class="row text-center mt-5 mb-5">
+        <div class="col-md-8 offset-md-2">
+          <a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a>
+          | <a href="https://github.com/BrandonDH">Visit my GitHub   account</a>
+        </div>
+      </div>
+        
     </div>
-    
-    <div class="row spacer-bottom">
-      <div class="six columns">
-        <h5 class="secondary-text">Input a list like this:</h5>
-        <pre>
-          <code>
-  user1@user1.com
-  user2@user2.com
-  user3@user3.com
-          </code></pre>
-      </div>
-        <div class="six columns">
-        <h5 class="secondary-text">Output a list like this:</h5>
-        <pre>
-          <code>
-  {user1@user1.com, user2@user2.com, user3@user3.com}
-          </code>
-        </pre>
-      </div>
-    </div>
-    <div class="row spacer-bottom" style="text-align: center;">
-      <img src="wobb-lobb.png" alt="" width="100">
-      <h4>I appreciate the support!</h4>
-      <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/bherford"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
-    </div> -->
-    <footer> <div style="text-align: center; margin-top:5rem;" class="row spacer-bottom"><a title="Go to BrandonHerford.com" href="http://brandonherford.com/">Built By Brandon Herford</a>
-     | <a href="https://github.com/BrandonDH">Visit my GitHub account</a></div></footer>
-  </div>
-
-  <script src="process_email_groups.js"></script>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    <script src="process_email_groups.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
