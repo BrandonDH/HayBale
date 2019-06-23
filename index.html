@@ -19,29 +19,27 @@
 
   <body>
     <div class="container-fluid">
-
       <div class="row enter-list">
+
         <!-- INPUT -->
         <div class="col-md-6">
-            <h1 class="mb-5 h4">HAYBALE</h1>
-            <input type="text" class="pl-0 align-self-center form-control custom-control" id="makeList" placeholder="Type Here">
+            <h1 class="mb-5 mt-3 h4">HAYBALE</h1>
+            <div class="hashtag-input">
+              <input type="text" class="pl-0 align-self-center form-control custom-control" id="makeList" placeholder="Type here...">
+          </div>
         </div>
 
         <!-- OUTPUT -->
         <div class="col-md-6 get-output">
-            <div class="p-5 pl-2 pr-2" id="alert">
-              
-              </div>
-
-              <div class="text-right fixed-bottom">
-                <button id="clearList" class="btn btn-link" value="Clear List">Clear</button>
-                <button class="btn btn-link" id="copyList" value="Copy List">Copy</button> 
+          <div class="p-5 pl-2 pr-2" id="alert">
             </div>
-            
+            <div class="text-right fixed-bottom">
+              <button id="clearList" class="btn btn-link" value="Clear List">Clear</button>
+              <!-- <button class="btn btn-link" id="copyList" value="Copy List">Copy</button>  -->
+          </div>
         </div>
-        <!-- <a href="#" class="ml-auto">Built by Brandon Herford</a> -->
-
       </div>
+
     <!-- CUSTOM JS -->
     <script src="js/process_email_groups.js"></script>
   </body>

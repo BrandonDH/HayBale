@@ -15,17 +15,11 @@ listClear.addEventListener('click', function() {
 })
 
 listCopy.addEventListener('click', function() {
-  /* Get the text field */
-  var copyText = document.getElementById('alert').innerHTML;
-
-  /* Select the text field */
+  var copyText = document.getElementById('alert');
   copyText.select();
-
-  /* Copy the text inside the text field */
   document.execCommand("copy");
 
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  alert('<div class="alert alert-primary" role="alert">' + "Copied the text: " + copyText.value + '</div>');
 })
 
 
