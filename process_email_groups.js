@@ -1,9 +1,11 @@
 let listToProcess = document.getElementById('emailList');
 
-listToProcess.addEventListener('keyup',function() {
-  let csl = "{" + this.value.split(" ").join(", ") + "}";
-
+listToProcess.addEventListener('keyup', function() {
+  // let commaList = this.value.split(" ").join("#");
+console.log(commaList)
   let listItem = document.getElementById('alert');
-  
-  listItem.innerHTML = csl;
+console.log(listItem)
+  listItem.innerHTML = "#" + commaList;
 })
+
+// add remove comma
