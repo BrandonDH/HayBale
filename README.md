@@ -2,7 +2,7 @@
 This project takes user input from a text field and processes it into a list of hashtags.
 
 ## JavaScript list processing logic graveyard
-These are my first attempts to get the copy logic working using the clipboard API.
+These are my first (failed) attempts to get the copy logic working using the clipboard API.
 
 ```javascript
 // copyList.addEventListener('click', copyContent())
