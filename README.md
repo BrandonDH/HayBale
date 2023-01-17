@@ -1,7 +1,9 @@
 # HayBale
 This project takes user input from a text field and processes it into a list of hashtags.
 
-## Failed JavaScript
+## JavaScript Hashtag processing logic graveyard
+These are my first attempts to get the copy logic working using the clipboard API.
+
 ```javascript
 // copyList.addEventListener('click', copyContent())
 // function copyContent() {
